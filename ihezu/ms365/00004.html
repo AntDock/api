@@ -1,0 +1,166 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>微软365订阅合租</title>
+
+
+<style>
+@import url("https://fonts.googleapis.com/css?family=Share+Tech+Mono|Montserrat:700");
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+    color: inherit;
+}
+
+body {
+    background-image: linear-gradient(120deg, #006dd0 0%, #000000 100%);
+    height: 100vh;
+}
+
+h1 {
+    font-size: 45vw;
+    text-align: center;
+    position: fixed;
+    width: 100vw;
+    z-index: 1;
+    color: #ffffff26;
+    text-shadow: 0 0 50px rgba(0, 0, 0, 0.07);
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    font-family: "Montserrat", monospace;
+}
+
+div {
+    background: rgba(0, 0, 0, 0);
+    width: 70vw;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    margin: 0 auto;
+    padding: 30px 30px 10px;
+    box-shadow: 0 0 150px -20px rgba(0, 0, 0, 0.5);
+    z-index: 3;
+}
+
+P {
+    font-family: "Share Tech Mono", monospace;
+    color: #f5f5f5;
+    margin: 0 0 20px;
+    font-size: 17px;
+    line-height: 1.2;
+}
+
+span {
+    color: #8abeb7;
+}
+
+i {
+    color: #f0c674;
+}
+
+div a {
+    text-decoration: none;
+}
+
+b {
+    color: #81a2be;
+}
+
+a.avatar {
+    position: fixed;
+    bottom: 15px;
+    right: -100px;
+    -webkit-animation: slide 0.5s 4.5s forwards;
+            animation: slide 0.5s 4.5s forwards;
+    display: block;
+    z-index: 4
+}
+
+a.avatar img {
+    border-radius: 100%;
+    width: 44px;
+    border: 2px solid white;
+}
+
+@-webkit-keyframes slide {
+    from {
+        right: -100px;
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+        opacity: 0;
+    }
+    to {
+        right: 15px;
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+        opacity: 1;
+    }
+}
+
+@keyframes slide {
+    from {
+        right: -100px;
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+        opacity: 0;
+    }
+    to {
+        right: 15px;
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+        opacity: 1;
+    }
+}
+</style>
+</head>
+<body>
+<h1>欢迎</h1>
+<p><span>pageID: IHEZU-MS365-00004</span> <i>api: OK</i></p>
+
+<div>
+
+<p>> <span>车友 </span><i>RobertK</i><span> 您好，感谢您的信任，快上车吧！本页面将提供关于登录账号和使用的重要信息，请您全部阅读并保留本页链接！</span><i>当您忘记续费，账号不可访问时，您将只能在这里获得帮助！</p>
+
+<p>> <span>车主 </span><i>张哲涵 Eric Zhang</i><span> 为 </span><i>MS365 开发人员</i><span> 且持续使用此账户开发，因此开发账户可以</span><i> 无限续期 </i><span>并拿出来分享，</span><i>您无需担忧账户过期跑路问题。</i></p>
+
+<p>> <i>如有任何账号问题（更改自定前缀/无法登录/账号异常等）</i><span>，请经由爱合租平台官方群聊功能与我联系。</span></p>
+
+<p>> <i> 首次登录 </i><span>请打开</span><i> https://login.microsoftonline.com </i><span>并使用以下账号信息，登录后系统会要求您</span><i> 更改密码。此后下方初始密码信息将自动失效。</i></p>
+
+<p>> <span>您的自定账号</span>: "<i>RobertK@sa.antdock.cn</i>"</p>
+<p>> <span>您的初始密码</span>: "<i>VDdmr626</i>"</p>
+
+<p>> <span>您的账号处于</span><i> 正常许可，订阅持续 </i><span>状态。如遇平台续费不及时，您被踢出官方平台群聊的情形，我将为您保留账号24小时。随后账号删除，官方提供的数据恢复链接会显示在本页面上</span><i>（所以请保留本页链接！）</i><span>，限时可供下载。</span></p>
+
+<p>> <span>最后，https://antdock.cn 是我的个人博客首页，欢迎您常去看看。</span></p>
+
+</div>
+
+<script>
+var str = document.getElementsByTagName('div')[0].innerHTML.toString();
+var i = 0;
+document.getElementsByTagName('div')[0].innerHTML = "";
+
+setTimeout(function() {
+    var se = setInterval(function() {
+        i++;
+        document.getElementsByTagName('div')[0].innerHTML = str.slice(0, i) + "|";
+        if (i == str.length) {
+            clearInterval(se);
+            document.getElementsByTagName('div')[0].innerHTML = str;
+        }
+    }, 10);
+},0);
+</script>
+
+</body>
+</html>
